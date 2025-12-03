@@ -1,0 +1,17 @@
+Created a simple main/decode function to parse the input and get the count at 0.
+
+main
+- Handles file i/o
+- calls decode per line of the file input
+- output final count of all 0s when turning dial
+
+decode
+- turns dial given direction
+- resets dial if we reach one of the bounds
+- adds counted 0s to the current count in main
+
+Thoughts:
+
+Room to avoid using a global to keep count, sort of a band-aid fix so to speak.
+Potential idea to use a wrapper function that only returns the completed count, but we'd need to be more creative.
+Potential to use a vector that holds a tuple (str, int). insert lines into vector that we can use in wrapper function.
