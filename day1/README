@@ -1,3 +1,5 @@
+========== STAR 1 ==========
+
 Created a simple main/decode function to parse the input and get the count at 0.
 
 main
@@ -10,8 +12,12 @@ decode
 - resets dial if we reach one of the bounds
 - adds counted 0s to the current count in main
 
-Thoughts:
 
-Room to avoid using a global to keep count, sort of a band-aid fix so to speak.
+========== STAR 2 ==========
+Originally I had this as my first solution, I had placed my count increase at the end of each iteration of decode's loop.
+
+
+Thoughts:
+Using a global to keep count isn't the best idea, there's better ways to manage this value when running decode.
 Potential idea to use a wrapper function that only returns the completed count, but we'd need to be more creative.
-Potential to use a vector that holds a tuple (str, int). insert lines into vector that we can use in wrapper function.
+Using a vector<str,int> might be smart instead of completing the function within the file input stream. 
