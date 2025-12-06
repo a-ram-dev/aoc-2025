@@ -1,0 +1,24 @@
+========================================= DAY 2 ===============================
+
+part 1
+
+- created a brute force approach to iterate through the given ranges and add invalid ids together.
+- main takes care of file i/o, adding ranges to a string vector.
+- checkIds goes through the string vector and manually runs through each range in a for loop. all invalids are added
+	to a uint64 vector.
+- sumVect pulls values from vector and adds them up to return.
+- main prints total invalid ids and exits.
+
+notes
+- I struggled with this due to some conversion misery. I left old code but essentially the char* -> uint couldn't 
+	handle a few values.
+- There's definitely a better way than to brute force this. Optimization could be to just use math (look over low end,
+	and high end range. just compare values across that full spectrum).
+- Definitely want to use another option for part 2. Regex? (I could use some practice with them).
+
+
+
+
+
+
+===============================================================================
